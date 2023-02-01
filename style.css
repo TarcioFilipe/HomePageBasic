@@ -1,0 +1,414 @@
+@font-face {
+    font-family: "padrao";
+    src: url(./data/Gothic_A1/GothicA1-Regular.ttf);
+    font-weight: 400;
+ }
+
+@font-face {
+    font-family: "padrao";
+    src: url(./data/Gothic_A1/GothicA1-Bold.ttf);
+    font-weight: 600;
+ }
+
+@font-face {
+    font-family: "padrao";
+    src: url(./data/Gothic_A1/GothicA1-Black.ttf);
+    font-weight: 900;
+ }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "padrao";
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+}
+
+.primeiro{
+    background-image: linear-gradient(to bottom right, #dd1173, #350e47);
+}
+
+header {
+    width: 100%;
+    height: 86px;
+    
+}
+
+.background header p {
+    margin: 0px 15px;
+}
+.background header a p {
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.container {
+    width: 80%;
+    padding: 36px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.conteiner header .logo {
+    width: 120px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.opcao {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.container .part {
+    width: 50%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* PRIMEIRA PARTE HOME */
+.container .um h1{
+    color: white;
+    font-size: 10vh;
+    font-weight: 700;
+    margin: 20px 10px 20px 0px;
+    
+}
+
+.container .um h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 25px 10px 0px;
+}
+
+.container .um button{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 20px 40px;
+    margin-top: 20px ;
+
+    background-color: #fc0a7e;
+    color: white;
+
+    border: none;
+    border-radius: 3px;
+}
+
+/* PARTE 2 HOME */
+.container .dois {
+    background-image: url(./data/imgHome.png);
+    background-repeat: no-repeat;
+
+    min-width: 700px;
+    margin-left: 38%;
+    margin-top: 50px;
+
+    position: absolute;
+}
+
+/* SECTION 2 */
+.segundo{
+    background-color: #333333;
+    grid-template-rows: 1fr 2fr;
+}
+
+.segundo .bgDois {
+    padding: 0;
+
+    background-image: url(./data/tablet.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.background .container .text{
+    margin: 0 auto;
+    padding: 20px 0px 40px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.background .container .text span{
+    color: #a8a8a8;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.background .container .text h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+
+.background .container .imagem img{
+    max-width: 90%;
+    max-height: 100%;
+
+}
+
+/* SECTION 3 */
+.terceiro{
+    overflow: visible;
+}
+.terceiro .container{
+    grid-template-columns: 1fr;
+}
+
+.terceiro .container .side{
+    width: 100%;
+    
+}
+
+.terceiro .container .left{
+   margin-top: 13%;
+   margin-left: 15%;
+}
+
+.terceiro .container .left span{
+    color: #a8a8a8;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.terceiro .container .left h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: black;
+}
+
+.terceiro .container .left p{
+    line-height: 30px;
+}
+
+.terceiro .container .right img{
+    width: 310px;
+    height: 600px;
+    margin-top: 30px;
+}
+
+/* 2º container */
+
+.dois{
+    margin-top: 80px;
+}
+
+.terceiro .dois .right{
+    margin-left: 20%;
+}
+
+.terceiro .dois .right img{
+    width: 380px;
+    height: auto;
+}
+
+/* 3º container */
+
+.tres{
+    margin-top: 80px;
+}
+
+.terceiro .tres .right img{
+    width: 341px;
+    height: 540px;
+}
+
+/* 4º container */
+
+.terceiro .quatro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 80px;
+}
+
+.terceiro .quatro .box{
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin: 10px 20px;
+    padding-top: 70px;
+}
+
+.terceiro .quatro span{
+    margin: 10px;
+    font-weight: 600;
+}
+
+.terceiro .quatro p{
+    font-size: 16px;
+    color: #6b6b6b;
+    font-weight: 400;
+}
+
+.terceiro .quatro .sideL{
+    background-image: url(./data/icons/IconBurguer.svg);
+}
+
+.terceiro .quatro .center{
+    background-image: url(./data/icons/iconRestaurant.svg);
+
+}
+
+.terceiro .quatro .sideR{
+    background-image: url(./data/icons/iconGraphic.svg);
+
+}
+
+/* 5º container */
+.terceiro .cinco{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.terceiro .cinco .stats{
+    height: 200px;
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.terceiro .cinco .stats h1{
+    font-size: 60px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.terceiro .cinco .stats span{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+
+/* 6º container */
+.terceiro .seis{
+    display: grid;
+    grid-row-gap: 120px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.side{
+    height: 500px;
+}
+
+.terceiro .seis .left{
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-left: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.terceiro .seis .left span{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.terceiro .seis .foto{
+    background-image: url(./data/hamburgersFoto.jpg);
+    background-repeat: no-repeat;
+    background-size: 80% 85%;
+    background-position: center left;
+}
+
+#fotoDois{
+    background-image: url(./data/pratoFeito.jpg);
+    background-position: center right;
+}
+
+
+/* 7º container */
+.terceiro .sete{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+
+.terceiro .sete .lado{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.terceiro .sete .lado img{
+    width: 32px;
+    height: 32px;
+}
+
+.terceiro .sete .mid{
+    justify-content: start;
+}
+
+.terceiro .sete .mid img{
+    margin-bottom: 45px;
+}
+
+.terceiro .sete .mid p{
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 0px 25px 0px;
+}
+
+.terceiro .sete .mid .fraseInfo{
+    display: flex;
+}
+
+
+
+
+/* SECTION 4 */
